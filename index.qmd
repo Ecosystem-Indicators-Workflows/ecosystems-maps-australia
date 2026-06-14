@@ -1,4 +1,4 @@
-# Overview of this document
+# Overview of this document {.unnumbered}
 
 This document is part of the ARDC Ecosystem Indicators Workflows project.
 
@@ -26,7 +26,6 @@ Use the links on the left to navigate through the different sections of this res
 ## Contributors
 
 Mark Tozer and David Keith contributed the preliminary cross-referencing tables for state level maps. 
-
 
 ## Reproducibility statement
 
