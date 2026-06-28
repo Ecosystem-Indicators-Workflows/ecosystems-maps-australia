@@ -9,15 +9,27 @@ book:
     - index.qmd
     - part: "Catalogue"
       chapters: 
-      - catalogue/index.qmd
-      - catalogue/QLD-REDD.ipynb
+      - file: "catalogue/index.qmd"
+        text: "Summary"
+      - file: "catalogue/QLD-REDD.ipynb"
+        text: "Queensland's RE"
+      - file: "catalogue/ECNes.ipynb"
+        text: "National TEC"
     - part: "GET Crossreferencing"
       chapters: 
-      - xref-matrix/MTozer-matrix.ipynb
-      - xref-matrix/QLD-REDD.ipynb
+      - file: "xref-matrix/index.qmd"
+        text: "Summary"
+      - file: "xref-matrix/AUS-NEAP-IUCN-layers.ipynb"
+        text: "NEAP"
+      - file: "xref-matrix/MTozer-matrix.ipynb"
+        text: "National inventory"
     - part: "Examples"
       chapters: 
-      - examples/QLD-T1_1.ipynb
+      - examples/index.qmd
+      - file: "examples/QLD-T1_1.ipynb"
+        text: "T1.1 in Queensland"
+      - file: "examples/QLD-REDD.ipynb"
+        text: "EFG in the Gayini wetlands"
     - Instructions.qmd
     - references.qmd
   margin-header: |
@@ -36,6 +48,7 @@ format:
     css: styles.css
     highlight-style: solarized
     toc: true
+    sidebar-width: 300px # Default is 250px
   pdf:
     documentclass: scrreprt
   epub:
