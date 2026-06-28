@@ -1,16 +1,46 @@
 # Summary of input data
 
+We are creating a catalogue of Ecosystem distribution data (spatial data + ecosystem descriptions).
+
+Spatial data and ecosystem description might be linked via an attribute table, with 1:1 or 1:n relationships.
+
+```{mermaid}
+flowchart LR
+    subgraph Inputs
+        direction LR
+        SP[(Spatial dataset)]:::spdata
+        DD[(Descriptions<br>database)]:::ddata
+    end
+    subgraph Attributes
+        direction TB
+        SU[Spatial Unit]:::spdata -->|80%| RE1(Regional Ecosystem 1):::ddata
+        SU -->|20%| RE2(Regional Ecosystem 2):::ddata
+    end
+    Inputs --> Attributes
+    classDef spdata fill:#a6611a,stroke:#ddd,color:#ddd,stroke-width:2px;
+    classDef ddata fill:#dfc27d,stroke:#333,color:white,stroke-width:2px;
+    linkStyle default stroke:#000,stroke-width:2px,color:black;
+    style Inputs fill:none,color:black,stroke:#333,stroke-width:1px;
+    style Attributes fill:none,color:black,stroke:#333,stroke-width:1px,stroke-dasharray: 1 1;
+```
+
+These datasets are updated irregularly in each region. A specific dataset might need to be replaced when a new version comes out.
+
+Some datasets are available from accessible repository and allow direct integration into workflows.
+
 ## NVIS and state vegetation maps 
 
 | Title  | Version | Repository  |
 |--------|--------|--------|
-| NVIS | 7.0 |    |
+| National Vegetation Information System (NVIS) | 7.0 (2024) |  [Find Environmental Data](https://fed.dcceew.gov.au/datasets/be9930d6de354ace93fd1aa5d34a71de/about)  |
 | Queensland's Regional Ecosystems | 13.1 (2024) | [Queensland Spatial Catalogue](https://qldspatial.information.qld.gov.au/catalogueadmin/catalog/search/resource/details.page?uuid=%7B01972496-CD6D-4314-B0C0-DA0E0421FB0A%7D)|
 | Tasmania TASVEG | 4.0 | [Land Information System Tasmania](https://data.thelist.tas.gov.au/datagn/srv/eng/main.home)|
-| ACT Government Vegetation Map | 2023 | ACT Government Geospatial Data Catalogue |
-| Victoria Ecological Vegetation Classes | | DataVic |
+| ACT Government Vegetation Map | (2023) | ACT Government Geospatial Data Catalogue |
+| Victoria Ecological Vegetation Classes | | [DataVic](https://discover.data.vic.gov.au/dataset/native-vegetation-modelled-2005-ecological-vegetation-classes-with-bioregional-conservation-sta) |
 | NSW| ||
-| Western Australia Native Vegetation Extent (DPIRD-005) | |Data WA|
+| Western Australia Native Vegetation Extent (DPIRD-005) | |[Data WA](https://catalogue.data.wa.gov.au/api/3/action/package_show?id=036e531d-5166-4a22-b9ae-1f3d66fe2515)|
+| Northern Territory |||
+| South Australia |||
 
 : Data sources for the National Vegetation Information System {.striped .hover}
 
@@ -31,4 +61,17 @@
 | The Vegetation of the Australian Tropical Savannas | (2001) | [Queensland Government Open Data Portal](https://www.data.qld.gov.au/dataset/the-vegetation-of-the-tropical-savannas-australia) |
 
 : Data sources for other thematic maps {.striped .hover}
+
+
+## Other regional maps
+
+This subsection includes a list of datasets that have been explored previously and might still be useful for regional analysis but are not included in NVIS, and are not currently focus of active development. These are including for testing purposes.
+
+| Title  | Version | Repository  |
+|--------|--------|--------|
+| NSW Vegetation Classes | | |
+| Queensland Broad Vegetation Groups | | |
+| Victoria |||
+
+: Data sources for other regional maps {.striped .hover}
 
