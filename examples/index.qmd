@@ -1,0 +1,77 @@
+# Types of queries
+
+:::{.callout-caution}
+This section is work in progress. Content is not fully available at the moment.
+:::
+
+- Spatial queries
+    - For a specific spatial unit
+    - For a region (multiple units)
+- Thematic queries
+    - From a regional database to GET
+    - For a Ecosystem Functional Group
+
+## Spatial queries
+
+### For a specific spatial unit
+
+- Select a spatial unit (from point coordinates)
+- Match to conceptual units (attribute table)
+- Query cross-referencing table by unit id/name (rows)
+- Table of spatial units with membership values for one or more EFGs
+
+```{mermaid}
+flowchart LR
+    subgraph Inputs
+        direction LR
+        SP[(Spatial dataset)]:::spdata
+        DD[(Descriptions<br>database)]:::ddata
+        XR[(Cross-reference<br>table)]:::xref
+        GET[(Global<br>Ecosystem<br>Typology)]:::get
+    end
+    subgraph Crossreference
+        direction TB
+        SU[Spatial Unit]:::spdata -->|80%| RE1(Regional Ecosystem 1):::ddata
+        SU -->|20%| RE2(Regional Ecosystem 2):::ddata
+        RE1 --> XR1{X-ref}:::xref
+        RE2 --> XR2{X-ref}:::xref
+        XR1 -->|0.7| EFG1[EFG 1]:::get
+        XR1 -->|0.3| EFG2[EFG 2]
+        XR2 -->|1.0| EFG2:::get
+    end
+    subgraph Output
+        direction TB
+        SU1[Spatial Unit]:::spdata 
+        SU1 -->|0.56| EFG11[EFG 1]:::get
+        SU1 -->|0.44| EFG22[EFG 2]:::get
+    end
+    Inputs --> Crossreference
+    Crossreference --> Output
+    classDef spdata fill:#a6611a,stroke:#ddd,color:#ddd,stroke-width:2px;
+    classDef ddata fill:#dfc27d,stroke:#333,color:white,stroke-width:2px;
+    classDef xref fill:#80cdc1,stroke:#333,color:white,stroke-width:2px;
+    classDef get fill:#018571,stroke:#fff,color:#fff,stroke-width:3px;
+    linkStyle default stroke:#000,stroke-width:2px,color:black;
+    style Inputs fill:none,color:black,stroke:#333,stroke-width:1px;
+    style Crossreference fill:none,color:black,stroke:#333,stroke-width:1px,stroke-dasharray: 1 1;
+    style Output fill:none,color:black,stroke:#333,stroke-width:1px;
+```
+
+### For a region 
+
+- Select a region (bounding box or polygon)
+- Query cross-referencing table by list of ids/names
+- Table with membership values
+
+## Thematic queries
+
+### From a regional database to GET
+
+- Select a unit (from list)
+- Query cross-referencing table by unit id/name (rows)
+- List with membership values
+
+### For a Ecosystem Functional Group
+
+ - Query cross-referencing table by EFG (columns)
+ - Table with membership values

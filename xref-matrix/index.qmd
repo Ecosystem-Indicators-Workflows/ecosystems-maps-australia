@@ -31,6 +31,10 @@ flowchart LR
     style Crossreference fill:none,color:black,stroke:#333,stroke-width:1px,stroke-dasharray: 1 1;
 ```
 
+:::{.callout-caution}
+This section is work in progress. Content is not fully available at the moment.
+:::
+
 ## Existing cross-referencing data
 
 ### From national and sub-national classifications to the IUCN GET

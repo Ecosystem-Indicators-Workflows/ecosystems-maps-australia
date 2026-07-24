@@ -2,6 +2,10 @@
 
 This section provides some descriptive notes about the implementation of FAIR principles in this repository. Please refer to our project's FAIR Implementation Profile and FAIR4RS implementation plan for further detail.
 
+:::{.callout-caution}
+This section is work in progress. Content is not fully available at the moment.
+:::
+
 ## Findability
 
 ## Accessibility

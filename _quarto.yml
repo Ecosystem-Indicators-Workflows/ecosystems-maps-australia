@@ -26,17 +26,17 @@ book:
       chapters: 
       - file: "xref-matrix/index.qmd"
         text: "Summary"
-      - file: "xref-matrix/AUS-NEAP-IUCN-layers.ipynb"
-        text: "NEAP"
-      - file: "xref-matrix/MTozer-matrix.ipynb"
-        text: "National inventory"
+#      - file: "xref-matrix/AUS-NEAP-IUCN-layers.ipynb"
+#        text: "NEAP"
+#      - file: "xref-matrix/MTozer-matrix.ipynb"
+#        text: "National inventory"
     - part: "Examples"
       chapters: 
       - examples/index.qmd
-      - file: "examples/QLD-T1_1.ipynb"
-        text: "T1.1 in Queensland"
-      - file: "examples/QLD-REDD.ipynb"
-        text: "EFG in the Gayini wetlands"
+#      - file: "examples/QLD-T1_1.ipynb"
+#        text: "T1.1 in Queensland"
+#      - file: "examples/QLD-REDD.ipynb"
+#        text: "EFG in the Gayini wetlands"
     - file: Instructions.qmd
       text: "Instructions"
     - file: FAIR.qmd
