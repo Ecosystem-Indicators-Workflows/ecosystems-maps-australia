@@ -1,6 +1,6 @@
 # Summary of input data
 
-We are creating a catalogue of Ecosystem distribution data (spatial data + ecosystem descriptions).
+The purpose of this document is to create an initial catalogue of Ecosystem distribution data for Australia (spatial data + ecosystem descriptions).
 
 Spatial data and ecosystem description might be linked via an attribute table, with 1:1 or 1:n relationships.
 
@@ -24,27 +24,51 @@ flowchart LR
     style Attributes fill:none,color:black,stroke:#333,stroke-width:1px,stroke-dasharray: 1 1;
 ```
 
-These datasets are updated irregularly in each region. A specific dataset might need to be replaced when a new version comes out.
+Our focus is on terrestrial ecosystems (including some transitional ecosystems), but we aim include some Freshwater, Subterranean and Marine examples in later stages of the project.
 
-Some datasets are available from accessible repository and allow direct integration into workflows.
+## Terrestrial ecosystems: vegetation units
 
-## NVIS and state vegetation maps 
+Most of the terrestrial ecosystems in Australia are described in terms of vegetation maps. 
+
+### National Vegetation Information System
+
+The National Vegetation Information System (NVIS) is the foundational dataset for vegetation mapping in Australia. In this repository we focus on the most recent version (7.0)
 
 | Title  | Version | Repository  |
 |--------|--------|--------|
 | National Vegetation Information System (NVIS) | 7.0 (2024) |  [Find Environmental Data](https://fed.dcceew.gov.au/datasets/be9930d6de354ace93fd1aa5d34a71de/about)  |
-| Queensland's Regional Ecosystems | 13.1 (2024) | [Queensland Spatial Catalogue](https://qldspatial.information.qld.gov.au/catalogueadmin/catalog/search/resource/details.page?uuid=%7B01972496-CD6D-4314-B0C0-DA0E0421FB0A%7D)|
-| Tasmania TASVEG | 4.0 | [Land Information System Tasmania](https://data.thelist.tas.gov.au/datagn/srv/eng/main.home)|
-| ACT Government Vegetation Map | (2023) | ACT Government Geospatial Data Catalogue |
-| Victoria Ecological Vegetation Classes | | [DataVic](https://discover.data.vic.gov.au/dataset/native-vegetation-modelled-2005-ecological-vegetation-classes-with-bioregional-conservation-sta) |
+: Data sources for the National Vegetation Information System most recent versions {.striped .hover}
+
+:::{.callout-caution}
+Due to the way NVIS is compiled over time, comparing data from different NVIS versions is not possible. See [Using NVIS data](https://www.dcceew.gov.au/environment/environment-information-australia/national-vegetation-information-system/data-products)
+:::
+
+Further information and instructions for data download are available in @sec-NVIS.
+
+### State and territories datasets
+
+Although NVIS provides a national system, there are two main reasons to look at the original data sources from states and territories:
+
+- Ecosystem descriptions: State and territory map might provide additional ecosystem descriptions or extra information not captured in the NVIS data product
+- Spatial information: These datasets are updated irregularly in each region. Some states have updated their maps since the last NVIS release, resulting in more up-to-date and accurate representation of some units. 
+
+
+| Title  | Version in NVIS | Current version | Repository  |
+|--------|--------|--------|--------|
+| Queensland's Regional Ecosystems | 13.1 (2024) | | [Queensland Spatial Catalogue](https://qldspatial.information.qld.gov.au/catalogueadmin/catalog/search/resource/details.page?uuid=%7B01972496-CD6D-4314-B0C0-DA0E0421FB0A%7D)|
+| Tasmania TASVEG | 4.0 | 5.0 |[Land Information System Tasmania](https://data.thelist.tas.gov.au/datagn/srv/eng/main.home)|
+| ACT Government Vegetation Map | (2023) | | ACT Government Geospatial Data Catalogue |
+| Victoria Ecological Vegetation Classes | | | [DataVic](https://discover.data.vic.gov.au/dataset/native-vegetation-modelled-2005-ecological-vegetation-classes-with-bioregional-conservation-sta) |
 | NSW| ||
-| Western Australia Native Vegetation Extent (DPIRD-005) | |[Data WA](https://catalogue.data.wa.gov.au/api/3/action/package_show?id=036e531d-5166-4a22-b9ae-1f3d66fe2515)|
-| Northern Territory |||
-| South Australia |||
+| Western Australia Native Vegetation Extent (DPIRD-005) | | |[Data WA](https://catalogue.data.wa.gov.au/api/3/action/package_show?id=036e531d-5166-4a22-b9ae-1f3d66fe2515)|
+| Northern Territory ||||
+| South Australia ||||
 
-: Data sources for the National Vegetation Information System {.striped .hover}
+: Terrestrial vegetation data sources from states and territories {.striped .hover}
 
-## Threatened Ecological communities
+## Terrestrial ecosystems: thematic collections
+
+### Threatened Ecological communities
 
 
 | Title  | Version | Repository  |
@@ -54,7 +78,7 @@ Some datasets are available from accessible repository and allow direct integrat
 
 : Data sources for Threatened Ecological Communities {.striped .hover}
 
-## Thematic maps 
+### Thematic maps 
 
 | Title  | Version | Repository  |
 |--------|--------|--------|
@@ -63,7 +87,7 @@ Some datasets are available from accessible repository and allow direct integrat
 : Data sources for other thematic maps {.striped .hover}
 
 
-## Other regional maps
+### Other regional maps
 
 This subsection includes a list of datasets that have been explored previously and might still be useful for regional analysis but are not included in NVIS, and are not currently focus of active development. These are including for testing purposes.
 
@@ -75,3 +99,14 @@ This subsection includes a list of datasets that have been explored previously a
 
 : Data sources for other regional maps {.striped .hover}
 
+## Freshwater and transitional ecosystems
+
+Some transitional freshwater ecosystems are included in terrestrial vegetation maps (see previous section).
+
+Specific data sources for freshwater ecosystems and wetlands have not been added to this catalogue yet.
+
+## Marine and transitional ecosystems
+
+Some transitional marine (coastal) ecosystems are included in terrestrial vegetation maps (see previous section).
+
+Specific data sources for marine ecosystems have not been added to this catalogue yet.

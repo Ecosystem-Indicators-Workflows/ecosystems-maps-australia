@@ -4,15 +4,22 @@ project:
 book:
   title: "Australian ecosystems synthesis pipeline"
   subtitle: "Ecosystem Indicator Workflow"
-  author: JR Ferrer-Paris
+  author: 
+    - JR Ferrer-Paris
+    - M Tozer
+    - DA Keith
   chapters:
     - index.qmd
     - part: "Catalogue"
       chapters: 
       - file: "catalogue/index.qmd"
         text: "Summary"
+      - file: "catalogue/AUS-NVIS-v7-State-files.ipynb"
+        text: "NVIS 7.0"
       - file: "catalogue/QLD-REDD.ipynb"
-        text: "Queensland's RE"
+        text: "Queensland RE"
+      - file: "catalogue/TAS-TASVEG.ipynb"
+        text: "Tasmania TASVEG"
       - file: "catalogue/ECNes.ipynb"
         text: "National TEC"
     - part: "GET Crossreferencing"
@@ -30,7 +37,10 @@ book:
         text: "T1.1 in Queensland"
       - file: "examples/QLD-REDD.ipynb"
         text: "EFG in the Gayini wetlands"
-    - Instructions.qmd
+    - file: Instructions.qmd
+      text: "Instructions"
+    - file: FAIR.qmd
+      text: "FAIR notes"
     - references.qmd
   margin-header: |
     <center>

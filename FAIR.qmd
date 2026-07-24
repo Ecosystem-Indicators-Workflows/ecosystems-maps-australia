@@ -1,0 +1,28 @@
+# Implementation of FAIR principles {.unnumbered}
+
+This section provides some descriptive notes about the implementation of FAIR principles in this repository. Please refer to our project's FAIR Implementation Profile and FAIR4RS implementation plan for further detail.
+
+## Findability
+
+## Accessibility
+
+## Integration
+
+### Knowledge representation language for datasets
+
+For tabular data we use [CSV](https://www.w3.org/TR/tabular-data-primer/) format. CSV is one of the most popular formats for publishing data on the web. It is concise, easy to understand by both humans and computers, and aligns nicely to the tabular nature of most data.
+
+We use the OGC® Encoding Standard [GeoPackages](https://www.geopackage.org/spec/) for exchange and GeoPackage SQLite Extensions for direct use of vector geospatial features. 
+
+A GeoPackage is an open, standards-based, platform-independent, portable, self-describing, compact format for transferring geospatial information. It is a platform-independent SQLite database file that contains the GeoPackage data and metadata tables.
+
+## Reproducibility
+
+### Data provenance
+
+Data provenance can be documented using the PROV specification.
+
+> The *provenance* of digital objects represents their origins. PROV is a specification to express provenance records, which contain *descriptions* of the entities and activities involved in producing and delivering or otherwise influencing a given object. [PROV Model Primer](https://www.w3.org/TR/2013/NOTE-prov-primer-20130430/)
+
+Here we use PROV to document the entitites (original data, intermediary product and ouputs), activities (cross-referencing, filtering or querying), and agents (experts, ecologists, data scientists) involved in the interpretation of ecosystem distribution data. 
+
