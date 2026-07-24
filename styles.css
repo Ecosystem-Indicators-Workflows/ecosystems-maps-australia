@@ -8,3 +8,7 @@ body {
   margin: 20px;
   font: 16px 'Open Sans', sans-serif;
 }
+
+.chapter-number {
+  display: none;
+}

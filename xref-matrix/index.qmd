@@ -1,0 +1,50 @@
+# Adding cross-referencing data to the catalogue
+
+As part of the catalogue we are documenting the cross-referencing information available for different vegetation/ecosystem classifications to the IUCN Global Ecosystem Typology.
+
+Cross-referencing tables assing membership values from entities in one classification system into entities from another classification system. These can typically be stored in wide matrix format, wide table format (one row to one or more columns) or long table format (each row representing one relationship).
+
+```{mermaid}
+flowchart LR
+    subgraph Inputs
+        direction LR
+        DD[(Descriptions<br>database)]:::ddata
+        XR[(Cross-reference<br>table)]:::xref
+        GET[(Global<br>Ecosystem<br>Typology)]:::get
+    end
+    subgraph Crossreference
+        direction TB
+        RE1(Regional Ecosystem 1):::ddata
+        RE2(Regional Ecosystem 2):::ddata
+        RE1 --> XR1{X-ref}:::xref
+        RE2 --> XR2{X-ref}:::xref
+        XR1 -->|0.7| EFG1[EFG 1]:::get
+        XR1 -->|0.3| EFG2[EFG 2]
+        XR2 -->|1.0| EFG2:::get
+    end
+    Inputs --> Crossreference
+    classDef ddata fill:#dfc27d,stroke:#333,color:white,stroke-width:2px;
+    classDef xref fill:#80cdc1,stroke:#333,color:white,stroke-width:2px;
+    classDef get fill:#018571,stroke:#fff,color:#fff,stroke-width:3px;
+    linkStyle default stroke:#000,stroke-width:2px,color:black;
+    style Inputs fill:none,color:black,stroke:#333,stroke-width:1px;
+    style Crossreference fill:none,color:black,stroke:#333,stroke-width:1px,stroke-dasharray: 1 1;
+```
+
+:::{.callout-caution}
+This section is work in progress. Content is not fully available at the moment.
+:::
+
+## Existing cross-referencing data
+
+### From national and sub-national classifications to the IUCN GET
+
+- The NEAP project includes a cross-reference from derived spatial units (NVIS Major Vegetation Groups + IBRA bioregions) to the IUCN Global Ecosystem Typology. Format is in long table format.
+- The ARC Laureate project is building up a collection of cross-referencing tables (wide table format) for all state level vegetation maps and some thematic maps.
+- A cross-referencing table for the Threatened Ecological Communities was published and is available in an open repository.
+- Draft cross-referencing tables for some regional maps were published during the development of the IUCN GET. These are only available for testing purposes and have been superceeded.
+
+### From sub-national classifications to national (NVIS) 
+
+- The NVIS data set includes look-up and attribute tables to match state level vegetation maps to the NVIS hierarchy.
+- 

@@ -1,4 +1,4 @@
-# Instructions for Reproducibility
+# Instructions for Reproducibility {.unnumbered}
 
 Many users will be able to copy and paste code to test functionality in different computing environment. 
 
@@ -12,13 +12,10 @@ We use a python environment to configure Jupyter lab with different computation 
 ```sh
 
 python3 -m venv .venv
-
 source .venv/bin/activate
-
 pip install --upgrade pip
-
 pip install jupyterlab
-pip install numpy pandas geopandas fiona matplotlib owslib folium basemap plotly altair
+pip install numpy pandas geopandas fiona matplotlib owslib folium basemap plotly altair prov
 ```
 
 The `requirements.txt` file has a list of the installed modules and versions
@@ -27,13 +24,13 @@ The `requirements.txt` file has a list of the installed modules and versions
 pip freeze > requirements.txt
 ```
 
-
 And we can use it to install the same modules in another environment:
 
 ```sh
 pip install -r requirements.txt
 ```
 
+## Using Jupyter
 
 ### Using leaflet/folium for showing maps
 
@@ -56,7 +53,7 @@ pip install bash_kernel
 python -m bash_kernel.install
 ```
 
-### Katana or other HPC
+## Katana or other HPC
 
 In order to move data from/to Katana, Gadi or other HPC, we can set up [streamlined secure remote access](https://medium.com/@prateek.malhotra004/streamlining-secure-remote-access-a-guide-to-passwordless-ssh-connections-between-linux-servers-8c26bb008af9):
 

@@ -4,21 +4,43 @@ project:
 book:
   title: "Australian ecosystems synthesis pipeline"
   subtitle: "Ecosystem Indicator Workflow"
-  author: JR Ferrer-Paris
+  author: 
+    - JR Ferrer-Paris
+    - M Tozer
+    - DA Keith
   chapters:
     - index.qmd
     - part: "Catalogue"
       chapters: 
-      - catalogue/index.qmd
-      - catalogue/QLD-REDD.ipynb
+      - file: "catalogue/index.qmd"
+        text: "Summary"
+      - file: "catalogue/AUS-NVIS-v7-State-files.ipynb"
+        text: "NVIS 7.0"
+      - file: "catalogue/QLD-REDD.ipynb"
+        text: "Queensland RE"
+      - file: "catalogue/TAS-TASVEG.ipynb"
+        text: "Tasmania TASVEG"
+      - file: "catalogue/ECNes.ipynb"
+        text: "National TEC"
     - part: "GET Crossreferencing"
       chapters: 
-      - xref-matrix/MTozer-matrix.ipynb
-      - xref-matrix/QLD-REDD.ipynb
+      - file: "xref-matrix/index.qmd"
+        text: "Summary"
+#      - file: "xref-matrix/AUS-NEAP-IUCN-layers.ipynb"
+#        text: "NEAP"
+#      - file: "xref-matrix/MTozer-matrix.ipynb"
+#        text: "National inventory"
     - part: "Examples"
       chapters: 
-      - examples/QLD-T1_1.ipynb
-    - Instructions.qmd
+      - examples/index.qmd
+#      - file: "examples/QLD-T1_1.ipynb"
+#        text: "T1.1 in Queensland"
+#      - file: "examples/QLD-REDD.ipynb"
+#        text: "EFG in the Gayini wetlands"
+    - file: Instructions.qmd
+      text: "Instructions"
+    - file: FAIR.qmd
+      text: "FAIR notes"
     - references.qmd
   margin-header: |
     <center>
@@ -36,6 +58,7 @@ format:
     css: styles.css
     highlight-style: solarized
     toc: true
+    sidebar-width: 300px # Default is 250px
   pdf:
     documentclass: scrreprt
   epub:

@@ -1,17 +1,8 @@
-# Overview of this document
+# Overview of this document {.unnumbered}
 
-This document is part of the ARDC Ecosystem Indicators Workflows project.
+This online document is a joint output of the ARDC "Ecosystem Indicators Workflows" (EIW) project and the ARC Industry Laureate Fellowship Project "Foundations for leading the nature positive ecosystem conservation agenda".
 
-::: {.callout-note}
-## Target ecosystem types
-- All terrestrial ecosystems of Australia. 
-- Selected palustrine wetland and other transitional ecosystems of Australia.
-- Selected subterranean ecosystems of Australia.
-:::
-
-
-## Workflow plan 
-
+## Document structure
 
 This resource includes the following components :
 
@@ -23,14 +14,36 @@ This resource includes the following components :
 
 Use the links on the left to navigate through the different sections of this resource.
 
+::: {.callout-note}
+## Target ecosystem types
+- All terrestrial ecosystems of Australia. 
+- Selected palustrine wetland and other transitional ecosystems of Australia.
+- Selected subterranean ecosystems of Australia.
+:::
+
+
+
 ## Contributors
 
-Mark Tozer and David Keith contributed the preliminary cross-referencing tables for state level maps. 
+MT and JRFP led to the data catalogue section.
+MT and DAK led the cross-referencing tables for state level maps. 
+JRFP led the technical documentation of all sections.
+Other members of the EIW team contributed to some sections of this resource.
+
+## Revision history {.unnumbered}
+
+Version control for this document is maintain in the original [GitHub repository](https://github.com/Ecosystem-Indicators-Workflows/ecosystems-maps-australia).
+
+|Version | Date | Editor | Summary of Changes |
+|------|------|-----------------|----------------------|
+| 0.1 | 4 May 2026 | JRFP | Initial draft and project structure |
+| 0.2 | 20 May 2026 | WM and ARS | Added dataset information |
+| [0.3-alpha](https://github.com/Ecosystem-Indicators-Workflows/ecosystems-maps-australia/releases/tag/v0.3-alpha) | 25 Jul 2026 | JRFP | Incorporating input from MT and DAK in data catalogue section |
 
 
 ## Reproducibility statement
 
-This workflow uses Bash, R and Python for most steps of data download, preparation and analysis. All steps are documented using Jupyter notebooks and quarto. The workflow is designed to be reproducible, with instructions for data download and code execution provided in the relevant sections. The data used in this workflow is publicly available, and the code is open source. Instructions for setting up the environment and running the code are provided in the relevant sections. The workflow is designed to be run on a local machine, but can also be adapted to run on a cloud platform if desired.
+This resource uses Bash, R and Python for most steps of data download, preparation and analysis. All steps are documented using Jupyter notebooks and quarto. This resource is designed to be reproducible, with instructions for data download and code execution provided in the relevant sections. The data used in this resource is publicly available, and the code is open source. Instructions for setting up the environment and running the code and notes on the implementation of FAIR principles are provided in the relevant sections at the end of this document.
 
 ## Acknowledgements
 
