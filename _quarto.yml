@@ -16,10 +16,12 @@ book:
         text: "Summary"
       - file: "catalogue/AUS-NVIS-v7-State-files.ipynb"
         text: "NVIS 7.0"
+      - file: "catalogue/ACT-VegMap.ipynb"
+        text: "ACT VegMap 2023"
       - file: "catalogue/QLD-REDD.ipynb"
-        text: "Queensland RE"
+        text: "QLD RE 13.1"
       - file: "catalogue/TAS-TASVEG.ipynb"
-        text: "Tasmania TASVEG"
+        text: "TASVEG 5.0"
       - file: "catalogue/ECNes.ipynb"
         text: "National TEC"
     - part: "GET Crossreferencing"
@@ -37,11 +39,13 @@ book:
 #        text: "T1.1 in Queensland"
 #      - file: "examples/QLD-REDD.ipynb"
 #        text: "EFG in the Gayini wetlands"
-    - file: Instructions.qmd
-      text: "Instructions"
-    - file: FAIR.qmd
-      text: "FAIR notes"
     - references.qmd
+    - part: "Appendices"
+      chapters:
+      - file: Instructions.qmd
+        text: "Instructions"
+      - file: FAIR.qmd
+        text: "FAIR notes"
   margin-header: |
     <center>
     ![](/assets/logo_CES.png){height=66px}
