@@ -22,6 +22,8 @@ book:
         text: "QLD RE 13.1"
       - file: "catalogue/TAS-TASVEG.ipynb"
         text: "TASVEG 5.0"
+      - file: "catalogue/VIC-EVC.ipynb"
+        text: "VIC EVC 2005"
       - file: "catalogue/ECNes.ipynb"
         text: "National TEC"
     - part: "GET Crossreferencing"
