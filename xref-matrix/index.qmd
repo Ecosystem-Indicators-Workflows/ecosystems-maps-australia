@@ -37,6 +37,23 @@ This section is work in progress. Content is not fully available at the moment.
 
 ## Existing cross-referencing data
 
+
+| | Data access | Laureate crossref | Agency crossref| Group discussion| Adjusted crossref | Synthesis
+|---|---|---|---|---|---|---|
+| QLD | complete | 1.65 | 0.35 | 1 | 0.35| to do |
+| NSW | complete | 1.4 | 0.5 | 1 | 0.2 | to do |
+| ACT | complete | | | | | |
+| VIC | complete | 2 |  | 1 | |  |
+| TAS | complete | 2 | 3 | 1 | 5 | to do |
+| SA | complete | 2 |  | 1 |  |  |
+| NT | complete | 1 | | | | |
+| WA | in process |  |  |  |  |  |
+| Savanna | complete | 1 | 0 |  |  |  |
+
+: Progress of the crossreferencing workflow for the ARC Laureate project {.striped .hover}
+
+## Additional notes
+
 ### From national and sub-national classifications to the IUCN GET
 
 - The NEAP project includes a cross-reference from derived spatial units (NVIS Major Vegetation Groups + IBRA bioregions) to the IUCN Global Ecosystem Typology. Format is in long table format.
