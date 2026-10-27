@@ -1,0 +1,23 @@
+# Synthesis map
+
+## Strategies
+
+Two possible strategies
+
+- n interpretations -> n outputs -> mosaic -> assemble -> synthesis
+- n interpretations -> 1 aggregate/synthesis -> output -> mosaic
+
+## output first, assemble later
+
+### Stepwise process
+
+1. For each xref, select an EFG, assign membership values to polygons, 
+2. rasterize polygons, output one raster, 
+3. add raster to EFG folder with source+interpreter+round combination in the name, 
+4. mosaic and sum all rasters to one layer for the whole country: one raster per EFG
+5. combine all rasters as bands in one file
+5. calculate which.max and max value
+
+
+rasterize the 
+https://github.com/hypertidy/fasterize
