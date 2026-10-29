@@ -21,3 +21,13 @@ Two possible strategies
 
 rasterize the 
 https://github.com/hypertidy/fasterize
+
+
+
+The case with Australia is a bit complex, and is a bit challenging but I will check 
+
+to fit in this with the level of granularity of the original data:
+each state has their own methods for their maps / database of ecological descriptions
+the number of units in each state varies depending on the classification with over 100 units in NT and TAS, up to thousands in QLD and NSW
+map units are different than the ecological concepts, with some map units being mosaics of more than one concept
+cross-referencing has been done by multiple interpreters, only Mark Tozer has done all the states, David will get there eventually, but other interpreters are local and only reviewed one state or one region. 
